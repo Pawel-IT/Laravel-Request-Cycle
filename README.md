@@ -24,6 +24,7 @@ All requests to a Laravel application begin at the `public/index.php` file. This
 The request is then passed to either:
 - HTTP Kernel (`App\Http\Kernel`) for web requests
 - Console Kernel for CLI commands
+  - The console kernel has it's own middleware
 
 ## 3. Bootstrap Loading
 
