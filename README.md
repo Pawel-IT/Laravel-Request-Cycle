@@ -56,7 +56,7 @@ The router:
 ## 6. Controller Execution (If Route Points to Controller and not closure)
 
 The controller:
-- May inject dependencies using the service container
+- May inject dependencies from the service container
 - Processes the request data
 - Interacts with models and services
 - Prepares the response data
