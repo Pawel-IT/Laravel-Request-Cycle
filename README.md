@@ -38,11 +38,13 @@ The HTTP Kernel loads several bootstrap classes that:
 
 ## 4. Middleware Processing
 
-Before the request reaches the application logic, it passes through global middleware such as:
+Before the request reaches the application logic, it passes through **global** middleware such as:
 - Checking for maintenance mode
 - Verifying CSRF tokens
 - Setting common headers
 - Managing sessions
+- If you want a middleware to run during every HTTP request to your application, you may append it to the **global** middleware stack in the application's bootstrap/app.php file
+- Then it proceeds to run other middleware
 
 ## 5. Route Processing
 
