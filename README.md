@@ -32,6 +32,7 @@ The HTTP Kernel loads several bootstrap classes that:
 - Configure logging
 - Detect the environment
 - Register service providers
+  - These include any packages or user provided services listed under bootstrap/providers.php
 - Boot service providers
 
 ## 4. Middleware Processing
@@ -49,7 +50,7 @@ The router:
 - Loads and executes any route-specific middleware
 - Resolves the controller or closure to handle the request
 
-## 6. Controller Execution
+## 6. Controller Execution (If Route Points to Controller and not closure)
 
 The controller:
 - May inject dependencies using the service container
