@@ -80,5 +80,3 @@ Finally, the response is sent to the client's browser.
 ## 10. Termination
 
 After sending the response, Laravel runs termination callbacks and cleanup tasks including any termination middleware (on supported servers).
-
-Would you like me to elaborate on any specific part of this lifecycle?
